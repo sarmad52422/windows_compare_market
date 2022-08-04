@@ -1,6 +1,7 @@
-import {Link, NavLink, useMatch, useResolvedPath} from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
 import "./nav_styles.css"
-function navHeader (){
+
+const navHeader = () => {
     return (
         <nav className="nav_style">
             <Link to='/' className="title">Home</Link>
@@ -12,12 +13,14 @@ function navHeader (){
         </nav>
     )
 }
-function CustomLink ({routePath,title}){
+
+function CustomLink({routePath, title}) {
     return (
-        <li >
+        <li>
             <NavLink to={routePath} activeClassName="active">{title}</NavLink>
         </li>
     )
 
 }
+
 export default navHeader
