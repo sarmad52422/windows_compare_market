@@ -30,4 +30,5 @@ artifacts:
   files:
     - public/**/*
     - src/**/*
+    - build/**/*
     - package.json
