@@ -2,6 +2,7 @@
   "name": "windows_compare_market",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://mytestserver3-env.eba-bmemqwdx.us-east-1.elasticbeanstalk.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -11,6 +12,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "tslint": "^6.1.3",
+
     "web-vitals": "^2.1.4"
   },
   "scripts": {
