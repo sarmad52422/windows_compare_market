@@ -19,8 +19,6 @@ phases:
       - npm run build
   post_build:
     commands:
-      - npm install -g server
-      - serve -s build
       - echo Build completed on `date`
       - echo build complete
 # Include only the files required for your application to run.
