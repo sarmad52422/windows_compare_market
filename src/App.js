@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import NavHeader from "./headers/NavHeader";
-import Home from "./Home/Index"
-import About from "./pages/about"
-import Partners from "./pages/our_partners"
+import NavHeader from "./client/headers/NavHeader";
+import Home from "./client/Home/Index"
+import About from "./client/pages/about"
+import Partners from "./client/pages/our_partners"
 import {Route, Routes} from "react-router-dom";
 
 function App() {
