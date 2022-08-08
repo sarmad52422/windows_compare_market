@@ -3,7 +3,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 module.exports = function(app) {
     app.use(
         createProxyMiddleware('/api',{
-            target: 'http://localhost:3100',
+            target: 'http://localhost:'+process.env.PORT,
             changeOrigin: true,
         })
     );
