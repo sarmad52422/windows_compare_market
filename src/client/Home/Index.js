@@ -2,7 +2,7 @@ import React, {useEffect} from "react"
 
 const callBackend = async () => {
     try {
-        const response = await fetch('/api/users/123/friends/44')
+        const response = await fetch('/api/users/sarmad/friends/huny')
 
 
         const body = await response.json()
@@ -19,7 +19,7 @@ const callBackend = async () => {
 
 export default function Home() {
 
-    const [mState,setMstate] = React.useState({value:"Nothing"})
+    const [mState,setMstate] = React.useState({value:"Loading...."})
     useEffect(()=>{
 
         callBackend().then(res =>{
