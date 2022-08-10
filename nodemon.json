@@ -1,4 +1,4 @@
 {
     "verbose": true,
-    "exec": "react-scripts start & node src/server.js"
+    "exec": "node server.js"
 }

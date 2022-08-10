@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import NavHeader from "./client/headers/NavHeader";
 import Home from "./client/Home/Index"
@@ -10,6 +9,9 @@ function App() {
     return (
         <>
             <NavHeader/>
+
+
+
             <div className="container">
                 <Routes>
                     <Route path="/" element={<Home/>}/>
