@@ -1,42 +1,106 @@
- *{
-     box-sizing: border-box;
- }
- body{
-     margin: 0;
+* {
+    box-sizing: border-box;
+}
 
- }
- .nav_style{
-     background-color: #333;
-     color: white;
-     display: flex;
-     justify-content: space-between;
-     align-items: stretch;
-     gap: 2rem;
-     padding: 0 1rem;
- }
- .nav_style a{
-     height: 100%;
-     color: inherit;
-     text-decoration: none;
-     display: flex;
-     align-items: center;
-     padding: .9rem;
+body {
+    margin: 0;
+
+}
+
+.nav_container{
+   display: flex;
+    background-color: #282c34;
 
 
- }
- .nav_style a.active {
-     background-color: #555;
- }
- .nav_style li:hover {
-     background-color: #777;
- }
- .title{
-     font-size: 2rem;
- }
- .nav_style ul{
-     list-style: none;
-     padding: 0;
-     margin: 0;
-     display: flex;
-     gap: 1rem;
- }
+}
+.nav_container a{
+    margin-left: 2rem;
+}
+.menu_container{
+    width: 100%;
+
+    display:flex;
+
+    justify-content: start;
+    align-items: center;
+    padding-left: 10%;
+
+}
+.logo{
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    margin-left: 1rem;
+}
+.title{
+    color: aliceblue;
+    font-size: 3rem;
+    text-decoration: none;
+}
+.menu_parent{
+    display:inline-block;
+    color: aliceblue;
+    align-items: center;
+    position: relative;
+
+
+
+
+
+
+}
+.menu_parent a{
+    color: aliceblue;
+    margin-left: 2rem;
+    text-decoration: none;
+
+    height: 100%;
+    padding-top: 15%;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+
+
+}
+
+.inner_menu_container{
+    display: none;
+    position: absolute;
+
+    margin-left: 10%;
+
+
+
+}
+.menu_parent a:hover{
+  color: brown;
+
+}
+.ul_class{
+
+    display: flex;
+    flex-direction: column;
+    background-color: #282c34;
+}
+.ul_class a{
+    align-self: end;
+    background-color: #61dafb;
+    width: 100%;
+    text-decoration: none;
+    box-decoration-break: unset;
+    margin-bottom: 10px;
+
+    padding: 0;
+
+}
+.ul_class a:hover{
+    color: #61dafb;
+}
+
+.menu_parent:hover .inner_menu_container{
+    display: block;
+    background-color: transparent;
+    padding-top: 15%;
+
+
+
+}
