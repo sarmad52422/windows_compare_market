@@ -21,7 +21,7 @@ body {
 
     display:flex;
 
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding-left: 10%;
 
@@ -72,28 +72,26 @@ body {
 
 }
 .menu_parent a:hover{
-  color: brown;
+    color: #61dafb;
 
 }
 .ul_class{
-
+    white-space: nowrap;
     display: flex;
     flex-direction: column;
     background-color: #282c34;
 }
 .ul_class a{
-    align-self: end;
-    background-color: #61dafb;
-    width: 100%;
     text-decoration: none;
     box-decoration-break: unset;
     margin-bottom: 10px;
-
-    padding: 0;
-
+    padding: 20px;
+    margin-left: 0;
+    align-self: stretch;
 }
 .ul_class a:hover{
     color: #61dafb;
+    background-color: rgba(238,238,238,0.18);
 }
 
 .menu_parent:hover .inner_menu_container{
