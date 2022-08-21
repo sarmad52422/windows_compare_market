@@ -1,37 +1,25 @@
-import React, {useEffect} from "react"
+import React from "react"
+// import fs from "fs"
 
-const callBackend = async () => {
-    try {
-        const response = await fetch('/api/users/sarmad/friends/huny')
-
-
-        const body = await response.json()
-        if (response.status !== 200) {
-          return {express:'server did not find api'}
-        } else return body
-    }catch (e){
-
-        return {express:'server is not connected'+e}
-    }
-
-}
-
-
+const image = require.context('../../assets/composit_doors/modran_composit_doors/')
+// const importAll = (e)=>{
+//     console.log("Value of e = "+e);
+//     e.keys().map((v,i)=>{
+//         console.log(v)
+//     })
+// }
 export default function Home() {
 
-    const [mState,setMstate] = React.useState({value:"Loading...."})
-    useEffect(()=>{
+    // const imges = require.context("../../public/images/assets/composit_doors/modran_composit_doors/")
+    // importAll(requireContext('./', false, /\.(png|jpe?g|svg)$/));
+ return (
+   <div>
+       {image.keys().map((value,index)=>{
+           console.log("img value = "+value)
+           return (<img src={image(value)}/>)
+       })}
 
-        callBackend().then(res =>{
-            setMstate({value:res.express})
-        }).catch(error=>{
-            setMstate({value:'error'})
-        })
-    },[])
-    return (
-         mState.value? (
-             <h1>{mState.value} valuessss</h1>
-         ):<h1>Server is not working</h1>
-    )
+   </div>
+ )
 
 }
