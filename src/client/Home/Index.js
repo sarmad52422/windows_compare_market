@@ -30,7 +30,7 @@ export default function Home() {
     },[])
     return (
          mState.value? (
-             <h1>{mState.value}</h1>
+             <h1>{mState.value} valuessss</h1>
          ):<h1>Server is not working</h1>
     )
 

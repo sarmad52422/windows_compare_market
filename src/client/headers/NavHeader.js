@@ -61,12 +61,6 @@ function printLinks(menuLinks) {
 
 }
 
-function MenuComponent() {
-    return (
-        <div>
 
-        </div>
-    )
-}
 
 export default navHeader
