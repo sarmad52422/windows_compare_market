@@ -9,17 +9,19 @@ const image = require.context('../../assets/composit_doors/modran_composit_doors
 //     })
 // }
 export default function Home() {
-
-    // const imges = require.context("../../public/images/assets/composit_doors/modran_composit_doors/")
-    // importAll(requireContext('./', false, /\.(png|jpe?g|svg)$/));
+  const [imagesElement,setImageElement] = React.useState(false);
+  React.useEffect(()=>{
+     setImageElement( image.keys().map((value,index)=>{
+          console.log("img value = "+value)
+          return (<img src={image(value)} alt={value.toString().substring()}/>)
+      }))
+  },[])
  return (
    <div>
-       {image.keys().map((value,index)=>{
-           console.log("img value = "+value)
-           return (<img src={image(value)}/>)
-       })}
+       {imagesElement?imagesElement:<p>Loading images ......</p>}
 
    </div>
  )
 
 }
+
